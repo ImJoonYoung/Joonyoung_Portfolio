@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1a6f8e74-2a3c-4f10-9cff-54d071215d8e" name="자운 그룹웨어" url="http://group.annis1.gethompy.com">
+        <fileTransfer rootFolder="/www" host="group.annis1.gethompy.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

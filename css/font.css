@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream1.woff') format('woff');
+    font-weight:100
+}
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream2.woff') format('woff');
+    font-weight:200
+}
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream3.woff') format('woff');
+    font-weight:300
+}
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream4.woff') format('woff');
+    font-weight:400
+}
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream5.woff') format('woff');
+    font-weight:500
+}
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream6.woff') format('woff');
+    font-weight:600
+}
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream7.woff') format('woff');
+    font-weight:700
+}
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream8.woff') format('woff');
+    font-weight:800
+}
+
+@font-face {
+    font-family:'S-coreDream';
+    src:url('/font/S-coreDream9.woff') format('woff');
+    font-weight:900
+}
