@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+header{
+    position:fixed;top:0;left:0;
+    width:100%;height:90px;
+    z-index:9999
+}
+
+.hd_inner{
+    display:flex;justify-content:space-between;align-items:center;
+    height:100%;
+    padding:0 50px;
+    background:#FFEBCD;
+    box-shadow:3px 3px 6px rgba(0,0,0,0.16)
+}
+
+#jy_content{
+    padding:90px 0
+}
+
+.visual_sec{
+    position:relative;
+    background:#FFEBCD
+}
+
+.visual_sec>h2{
+    position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+
+}
+
+.visual_menu{
+    display:flex
+}
+
+.visual_menu>li{
+    height:550px
+}
+
+

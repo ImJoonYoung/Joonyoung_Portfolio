@@ -1,8 +1,25 @@
 @charset "utf-8";
 
+:root{
+    font-size:16px
+}
+
+@media screen and(max-width:1023px){
+    :root{
+        font-size:15px
+    }
+}
+
+@media screen and (max-width:768px){
+    :root{
+        font-size:14px
+    }
+}
+
+
 body {
     margin:0;padding:0;
-    font-size:0.875em;font-family:'S-coreDream'
+    font-family:'S-coreDream'
 }
 html,
 form,
@@ -43,11 +60,20 @@ a {
     box-sizing:border-box;
 }
 
+/* 폰트사이즈 common */
+h2{
+    margin:0;
+    font-size:2.5rem
+}
 
+.f25{
+    font-size:1.8rem
+}
 
-
-
-
+/* 폰트색상 common */
+.fc_green{
+    color:#004040
+}
 
 
 
