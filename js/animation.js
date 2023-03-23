@@ -10,9 +10,9 @@ $(document).ready(function() {
             targets: '.ml6 .letter',
             translateY: [0, "-100px", 0],
             translateZ: 0,
-            duration:1000,
+            duration:500,
             easing:'linear',
-            delay: (el, i) => 200 * i
+            delay: (el, i) => 150 * i
         });
 
 })
