@@ -78,7 +78,9 @@ h2{
     color:#004040
 }
 
-
+.flex_cen{
+    display:flex;justify-content:center;align-items:center
+}
 
 
 
