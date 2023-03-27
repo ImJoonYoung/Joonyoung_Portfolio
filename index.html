@@ -9,13 +9,18 @@
     <meta name="Robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>웹 퍼블리셔 | 임준영</title>
+    <link rel="stylesheet" href="./js/fullpage/jquery.fullPage.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/common.css" type="text/css" />
     <link rel="stylesheet" href="./css/asset.css" type="text/css" />
     <link rel="stylesheet" href="./css/animation.css" type="text/css" />
     <script src="./js/jquery-3.6.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="./js/animation.js"></script>
+    <script src="./js/fullpage/jquery.fullPage.js"></script>
     <script src="./js/common.js"></script>
 
 </head>
@@ -32,7 +37,7 @@
     </header>
     <div class="jy_container">
         <main id="jy_content">
-            <section class="visual_sec">
+            <section class="visual_sec sec1">
                 <h2 class="ml6 fc_green">
                   <span class="text-wrapper">
                     <span class="letters">Welcome To My Website!</span>
@@ -60,6 +65,151 @@
                         </li>
                     </ul>
                 </nav>
+            </section>
+
+            <section id="project" class="sec sec2">
+                <h3>Recent Project</h3>
+                <div class="pj_slide_wrap">
+                    <ul id="pjSlide">
+                        <li class="item">
+                            <div class="img_wrap">
+                                <a href="https://www.smallwave.co.kr/">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="txt_wrap">
+                                <a href="https://www.smallwave.co.kr/">
+                                    <b class="pj_subject">스몰웨이브</b>
+                                    <span class="pj_contribute">프로젝트 기여율 : 60%</span>
+                                    <p>
+                                        게시판 퍼블리싱 반응형 작업, playbar, playlist 반응형 작업
+                                        fanpage, subpage 반응형 퍼블리싱 작업
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item">
+                            <div class="img_wrap">
+                                <a href="https://www.hopeletter.or.kr/board/no_32/16176">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="txt_wrap">
+                                <a href="https://www.hopeletter.or.kr/board/no_32/16176">
+                                    <b class="pj_subject">웹진 희망이야기</b>
+                                    <span class="pj_contribute">프로젝트 기여율 : 100%</span>
+                                    <p>
+                                        모든 페이지 하드코딩 반응형 퍼블리싱 작업
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item">
+                            <div class="img_wrap">
+                                <a href="https://cheongnyangnijeontongmarket.com/">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="txt_wrap">
+                                <a href="https://cheongnyangnijeontongmarket.com/">
+                                    <b class="pj_subject">청량리 전통시장</b>
+                                    <span class="pj_contribute">프로젝트 기여율 : 40%</span>
+                                    <p>
+                                        유지보수 / 메인페이지 fullpage, animation 반응형 작업
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item">
+                            <div class="img_wrap">
+                                <a href="https://www.missingchild.or.kr/home/main.do">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="txt_wrap">
+                                <a href="https://www.missingchild.or.kr/home/main.do">
+                                    <b class="pj_subject">실종아동 전문센터</b>
+                                    <span class="pj_contribute">프로젝트 기여율 : 80%</span>
+                                    <p>
+                                        메인 페이지, 서브페이지(회원가입, 메뉴, 콘텐츠) 반응형 작업
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item">
+                            <div class="img_wrap">
+                                <a href="https://www.missingchild.or.kr/home/main.do">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="txt_wrap">
+                                <a href="https://www.missingchild.or.kr/home/main.do">
+                                    <b class="pj_subject">한국서비스 표준진흥원</b>
+                                    <span class="pj_contribute">프로젝트 기여율 : 30%</span>
+                                    <p>
+                                        콘텐츠 페이지, 게시판 페이지 반응형 작업
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item">
+                            <div class="img_wrap">
+                                <a href="http://kisss.annis1.gethompy.com/">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="txt_wrap">
+                                <a href="http://kisss.annis1.gethompy.com/">
+                                    <b class="pj_subject">한국서비스 표준진흥원</b>
+                                    <span class="pj_contribute">프로젝트 기여율 : 50%</span>
+                                    <p>
+                                        콘텐츠 페이지, 게시판 페이지 반응형 작업
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item">
+                            <div class="img_wrap">
+                                <a href="http://hanlimcv.com/">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="txt_wrap">
+                                <a href="http://hanlimcv.com/">
+                                    <b class="pj_subject">한림제약 증례페이지</b>
+                                    <span class="pj_contribute">프로젝트 기여율 : 100%</span>
+                                    <p>
+                                        원래 php 소스를 가지고 증례(설문조사) 저장 및 개발 / 퍼블리싱
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item">
+                            <div class="img_wrap">
+                                <a href="http://hanlimcv.com/">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="txt_wrap">
+                                <a href="http://hanlimcv.com/">
+                                    <b class="pj_subject">회사 그룹웨어</b>
+                                    <span class="pj_contribute">프로젝트 기여율 : 70%</span>
+                                    <p>
+                                        모든 페이지 반응형 퍼블리싱 및 개발(10%)
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
             </section>
         </main>
     </div>
