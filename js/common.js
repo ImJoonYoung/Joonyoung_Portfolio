@@ -4,10 +4,12 @@ $(document).ready(function() {
       $('.visual_menu > li').removeClass('close');
       $('.visual_menu > li').eq($(this).index()).addClass('close');
       $('.visual').css('width', '0px')
+      $('#rotateTit, #rotateTit>img').animate({opacity:0})
    });
 
    $('.visual_sec').on('mouseleave', function() {
       $('.visual_menu > li').removeClass('close');
+      $('#rotateTit, #rotateTit>img').animate({opacity:1})
    })
 
    let mainSlider = $('#pjSlide');

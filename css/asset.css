@@ -33,6 +33,17 @@ header{
     animation-name:fontFade;animation-duration:2s;animation-delay:3.5s;animation-fill-mode:both
 }
 
+.circle_tit{
+    position:absolute;top:15%;left:37%;
+    width:350px;height:350px;
+    transform-origin:center;
+    z-index:3
+}
+
+.circle_tit>img{
+    width:100%
+}
+
 .ml6 {
     position: relative;
 }
