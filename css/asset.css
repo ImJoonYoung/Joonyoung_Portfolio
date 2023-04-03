@@ -21,7 +21,7 @@ header{
 
 .visual_sec{
     position:relative;
-    height:550px;
+    height:700px;
 }
 
 .visual_sec>h2{
@@ -34,8 +34,8 @@ header{
 }
 
 .circle_tit{
-    position:absolute;top:15%;left:37%;
-    width:350px;height:350px;
+    position:absolute;top:20%;left:40%;
+    width:400px;height:400px;
     transform-origin:center;
     z-index:3
 }
@@ -55,7 +55,7 @@ header{
 .menu_wrap{
     position:relative;
     display:flex;
-    height:550px;
+    height:700px;
 }
 
 .menu_wrap>li{
