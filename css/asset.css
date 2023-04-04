@@ -135,3 +135,7 @@ header{
     margin-bottom:80px
 }
 
+#pjSlide .img_wrap img{
+    width:100%;height:auto
+}
+
