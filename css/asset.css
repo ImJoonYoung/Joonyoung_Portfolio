@@ -127,7 +127,7 @@ header{
 }
 
 .sec{
-    padding-top:125px
+    padding:125px 0 50px
 }
 
 .sec h3{
@@ -139,3 +139,74 @@ header{
     width:100%;height:auto
 }
 
+.slick-list{
+    padding:0 !important
+}
+
+#pjSlide .slick-slide{
+    margin:0 10px
+}
+
+#pjSlide .slick-slide:not(.slick-current){
+    transform:scale(0.8);
+    filter:blur(2px)
+}
+
+#pjSlide .img_wrap{
+    margin-bottom:20px
+}
+
+#pjSlide .pj_subject{
+    display:block;
+    text-align:center;
+    margin-bottom:10px;
+    font-size:1.25rem;color:#fb5b75
+}
+
+#pjSlide .pj_contribute{
+    display:block;
+    text-align:center;
+    margin-bottom:15px;
+    font-size:.875rem;color:#1170c5
+}
+
+#pjSlide p{
+    text-align:center;line-height:1.5;
+    margin:0
+}
+
+.slick-dots{
+    position:static;
+    margin-top:35px
+}
+
+.slick-next, .slick-prev{
+    width:35px;height:35px;
+    transition:all .3s;
+    z-index:10
+}
+
+.slick-prev{
+    left:10px;
+    background:url(../img/arrow_left.svg) no-repeat center/contain
+}
+
+.slick-prev::before{
+    content:'';
+}
+
+.slick-next{
+    right:10px;
+    background:url(../img/arrow_right.svg) no-repeat center/contain
+}
+
+.slick-next::before{
+    content:'';
+}
+
+.slick-next:focus, .slick-next:hover{
+    background:url(../img/arrow_right_on.svg) no-repeat center/contain
+}
+.slick-prev:focus, .slick-prev:hover{
+    background:url(../img/arrow_left_on.svg) no-repeat center/contain
+}

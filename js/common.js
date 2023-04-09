@@ -16,8 +16,16 @@ $(document).ready(function() {
    let innerText = $('.inner-text');
 
    mainSlider.slick({
-      slidesToShow: 4,
+      slidesToShow: 3,
       dots: true,
+      arrows:true,
+      autoplay:true,
+      autoplaySpeed:3000,
+      pauseOnHover:true,
+      draggable:true,
+      centerMode:true,
+      infinite:true,
+      speed:800
    });
 
    mainSlider.on('wheel', function(e) {
