@@ -21,7 +21,7 @@ header{
 
 .visual_sec{
     position:relative;
-    height:700px;
+    height:800px;
 }
 
 .visual_sec>h2{
@@ -55,7 +55,7 @@ header{
 .menu_wrap{
     position:relative;
     display:flex;
-    height:700px;
+    height:800px;
 }
 
 .menu_wrap>li{
