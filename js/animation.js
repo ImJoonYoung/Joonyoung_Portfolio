@@ -14,27 +14,5 @@ $(document).ready(function() {
             easing:'linear',
             delay: (el, i) => 150 * i
         });
-    rotateTit.animate(
-        { opacity: [0, 1] },
-        {
-            duration: 1000,
-            delay:5500,
-            fill: 'both',
-        }
-    );
-    rotateTit.animate(
-        { transform: ["rotate(0deg)", "rotate(360deg)"] },
-        {
-            duration: 8000,
-            iterations: Infinity,
-            composite: "add" // *** this is the important line
-        }
-    );
-
-
-
-
-
-
 
 })

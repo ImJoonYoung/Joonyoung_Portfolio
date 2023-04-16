@@ -21,11 +21,11 @@ header{
 
 .visual_sec{
     position:relative;
-    height:800px;
+    height:89.2vh;
 }
 
 .visual_sec>h2{
-    position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+    position:absolute;top:40%;left:50%;transform:translateX(-50%);
     width:100%;
     text-align:center;
     z-index:10;
@@ -33,7 +33,7 @@ header{
     animation-name:fontFade;animation-duration:2s;animation-delay:3.5s;animation-fill-mode:both
 }
 
-.circle_tit{
+/*.circle_tit{
     position:absolute;top:20%;left:40%;
     width:400px;height:400px;
     transform-origin:center;
@@ -42,6 +42,44 @@ header{
 
 .circle_tit>img{
     width:100%
+}*/
+
+.word {
+    position: absolute;
+    top:45%;left:50%;transform:translateX(-50%);
+    animation-name:fadeIn;animation-duration:1s;animation-delay:5.3s;animation-fill-mode:both;
+    z-index: 3;
+    opacity:0
+}
+
+.word.on{
+    opacity:1
+}
+
+.word:before {
+     content: '';
+     background: radial-gradient(circle at 40% 20%, #fcfcfc 0%, #FFF6E8 10%, #6A8484 50%, #004040 70%);
+     border-radius: 50%;
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     z-index: 1;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -35%);
+     filter: blur(0.5px);
+     box-shadow:3px 6px 6px rgba(0,0,0,0.5);
+     opacity:0;
+     transition:all .5s;
+ }
+
+.word.on:before{
+    opacity:1
+}
+.word span {
+    position: absolute;top: 0;left: -10px;
+    font-size:3rem;color:#007B7B;font-weight:500;
+    z-index: 10
 }
 
 .ml6 {
@@ -55,7 +93,7 @@ header{
 .menu_wrap{
     position:relative;
     display:flex;
-    height:800px;
+    height:89.2vh;
 }
 
 .menu_wrap>li{
@@ -130,9 +168,9 @@ header{
     padding:125px 0 50px
 }
 
-.sec h3{
-    text-align:center;
-    margin-bottom:80px
+.pj_tit{
+    width:450px;
+    margin:0 auto 80px
 }
 
 #pjSlide .img_wrap img{
@@ -140,7 +178,7 @@ header{
 }
 
 .slick-list{
-    padding:0 !important
+    padding:0
 }
 
 #pjSlide .slick-slide{
@@ -180,6 +218,31 @@ header{
     margin-top:35px
 }
 
+.slick-dots li{
+    margin:0
+}
+
+.slick-dots li + li{
+    margin-left:10px
+}
+
+.slick-dots li button{
+    display:inline-block;
+    width:10px;height:10px;
+    background:#004040;
+    border-radius:50%;
+    transition:all .3s
+}
+
+.slick-dots .slick-active button{
+    transform:scaleX(2);
+    border-radius:4px;
+}
+
+.slick-dots li button:before{
+    content:''
+}
+
 .slick-next, .slick-prev{
     width:35px;height:35px;
     transition:all .3s;
@@ -210,3 +273,18 @@ header{
 .slick-prev:focus, .slick-prev:hover{
     background:url(../img/arrow_left_on.svg) no-repeat center/contain
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
