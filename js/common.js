@@ -45,11 +45,12 @@ $(document).ready(function() {
 
    /* 스크롤 svg animation */
 
-      var sv1 = new Vivus('pjSvg',{type:'oneByOne', duration:100 });
-
+      let sv1 = new Vivus('pjSvg',{type:'oneByOne', duration:100 });
+      let sv2 = new Vivus('skillSvg',{type:'oneByOne', duration:100 });
       $(window).on('scroll',function(){
-         var wdt=$(this);
+         let wdt=$(this);
          scrollAni(wdt,'#pjSvg',sv1);
+         scrollAni(wdt,'#skillSvg',sv2);
       });//vivus scroll
 
       function scrollAni(wd,wdt,vv){

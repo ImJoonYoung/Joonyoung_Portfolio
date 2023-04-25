@@ -168,9 +168,17 @@ header{
     padding:125px 0 50px
 }
 
-.pj_tit{
-    width:450px;
+.sec_tit{
+    width:350px;
     margin:0 auto 80px
+}
+
+.sec1_tit{
+    width:500px
+}
+
+.sec_tit>svg{
+    width:100%
 }
 
 #pjSlide .img_wrap img{
