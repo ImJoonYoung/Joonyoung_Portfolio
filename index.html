@@ -14,14 +14,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./css/font.css"/>
+    <link rel="stylesheet" href="./css/skill.css" type="text/css"/>
     <link rel="stylesheet" href="./css/common.css" type="text/css"/>
     <link rel="stylesheet" href="./css/asset.css" type="text/css"/>
-    <link rel="stylesheet" href="./css/skill.css" type="text/css"/>
     <link rel="stylesheet" href="./css/animation.css" type="text/css"/>
+
     <script src="./js/jquery-3.6.3.min.js"></script>
-    <script src="./js/vivus.min.js"></script>
+
+    <!--애니메이팅 js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./js/skill.js" defer></script>
+    <script src="./js/skill_hover.js" defer></script>
+    <script src="./js/vivus.min.js"></script>
+
+    <!-- 카운터 js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+
+    <!--common js-->
     <script src="./js/animation.js"></script>
     <script src="./js/common.js"></script>
 </head>
@@ -77,37 +88,37 @@
 		c0,3.34-1.48,5.53-4.43,6.39c2.67,0.42,3.79,2.06,3.98,5.4l0.22,3.53c0.06,0.96,0.23,1.74,0.45,2.31h-4.76
 		c-0.22-0.55-0.35-1.35-0.39-2.25L14.33,20.73z M10.51,13.02c2.6,0,4.21-1.09,4.21-4.08c0-2.99-1.61-4.08-4.21-4.08H5.81v8.16H10.51
 		z"/>
-    <path d="M26.7,18.48c0.1,3.02,1.29,4.69,3.76,4.69c1.8,0,3.05-0.87,3.34-2.44h4.53c-0.61,3.82-3.47,5.98-7.87,5.98
+                        <path d="M26.7,18.48c0.1,3.02,1.29,4.69,3.76,4.69c1.8,0,3.05-0.87,3.34-2.44h4.53c-0.61,3.82-3.47,5.98-7.87,5.98
 		c-5.53,0-8.26-3.5-8.26-9.54c0-5.98,2.73-9.51,8.26-9.51c5.56,0,8.26,3.54,8.26,9.51v1.32H26.7z M26.76,15.4h7.42
 		c-0.19-2.67-1.35-4.21-3.73-4.21C28.05,11.19,26.89,12.73,26.76,15.4z"/>
-    <path d="M49.42,7.65c4.72,0,7.62,2.38,8,6.56h-4.47c-0.19-1.83-1.41-2.92-3.53-2.92c-2.86,0-3.79,2.15-3.79,5.88
+                        <path d="M49.42,7.65c4.72,0,7.62,2.38,8,6.56h-4.47c-0.19-1.83-1.41-2.92-3.53-2.92c-2.86,0-3.79,2.15-3.79,5.88
 		c0,3.76,0.93,5.94,3.79,5.94c2.12,0,3.34-1.09,3.53-2.96h4.47c-0.39,4.18-3.28,6.56-8,6.56c-5.53,0-8.26-3.5-8.26-9.54
 		C41.16,11.19,43.89,7.65,49.42,7.65z"/>
-    <path d="M64.07,18.48c0.1,3.02,1.29,4.69,3.76,4.69c1.8,0,3.05-0.87,3.34-2.44h4.53c-0.61,3.82-3.47,5.98-7.87,5.98
+                        <path d="M64.07,18.48c0.1,3.02,1.29,4.69,3.76,4.69c1.8,0,3.05-0.87,3.34-2.44h4.53c-0.61,3.82-3.47,5.98-7.87,5.98
 		c-5.53,0-8.26-3.5-8.26-9.54c0-5.98,2.73-9.51,8.26-9.51c5.56,0,8.26,3.54,8.26,9.51v1.32H64.07z M64.14,15.4h7.42
 		c-0.19-2.67-1.35-4.21-3.73-4.21C65.42,11.19,64.27,12.73,64.14,15.4z"/>
-    <path d="M94.82,26.26h-4.47V14.88c0-2.44-1-3.6-2.86-3.6c-2.31,0-3.95,1.67-3.95,4.82v10.15h-4.47V8.1h4.47v3.08
+                        <path d="M94.82,26.26h-4.47V14.88c0-2.44-1-3.6-2.86-3.6c-2.31,0-3.95,1.67-3.95,4.82v10.15h-4.47V8.1h4.47v3.08
 		c0.67-2.12,2.54-3.54,5.14-3.54c3.95,0,6.14,2.54,6.14,7.17V26.26z"/>
-    <path d="M104.11,20.41c0,2.06,0.64,2.54,2.86,2.54h1.83v3.47c-0.58,0.06-1.9,0.1-2.73,0.1c-4.59,0-6.46-1.35-6.46-5.33V11.7h-2.57
+                        <path d="M104.11,20.41c0,2.06,0.64,2.54,2.86,2.54h1.83v3.47c-0.58,0.06-1.9,0.1-2.73,0.1c-4.59,0-6.46-1.35-6.46-5.33V11.7h-2.57
 		V8.1h2.57V2.96h4.5V8.1h4.69v3.6h-4.69V20.41z"/>
-    <path d="M126.06,17.03v9.22h-4.72V0.84h10.15c5.11,0,8.16,2.96,8.16,8.1c0,5.17-3.05,8.1-8.16,8.1H126.06z M130.85,13.02
+                        <path d="M126.06,17.03v9.22h-4.72V0.84h10.15c5.11,0,8.16,2.96,8.16,8.1c0,5.17-3.05,8.1-8.16,8.1H126.06z M130.85,13.02
 		c2.73,0,4.11-1.45,4.11-4.08c0-2.64-1.38-4.08-4.11-4.08h-4.79v8.16H130.85z"/>
-    <path d="M146.78,16.94v9.32h-4.47V8.1h4.47v3.28c0.61-2.47,2.09-3.73,4.85-3.73c0.55,0,1.06,0.06,1.45,0.16l-0.06,3.63
+                        <path d="M146.78,16.94v9.32h-4.47V8.1h4.47v3.28c0.61-2.47,2.09-3.73,4.85-3.73c0.55,0,1.06,0.06,1.45,0.16l-0.06,3.63
 		c-0.29-0.03-0.9-0.06-1.54-0.06C148.49,11.38,146.78,13.27,146.78,16.94z"/>
-    <path d="M162.69,26.71c-5.53,0-8.26-3.5-8.26-9.54c0-5.98,2.73-9.51,8.26-9.51c5.56,0,8.26,3.54,8.26,9.51
+                        <path d="M162.69,26.71c-5.53,0-8.26-3.5-8.26-9.54c0-5.98,2.73-9.51,8.26-9.51c5.56,0,8.26,3.54,8.26,9.51
 		C170.95,23.2,168.25,26.71,162.69,26.71z M162.69,23.11c2.89,0,3.79-2.19,3.79-5.94c0-3.73-0.9-5.88-3.79-5.88
 		c-2.86,0-3.79,2.15-3.79,5.88C158.9,20.92,159.83,23.11,162.69,23.11z"/>
-    <path d="M174.68,8.1h4.47v20.41c0,3.73-2.12,5.66-6.2,5.66c-0.55,0-1.45-0.03-1.9-0.1v-3.5h1.35c1.54,0,2.28-0.8,2.28-2.54V8.1z
+                        <path d="M174.68,8.1h4.47v20.41c0,3.73-2.12,5.66-6.2,5.66c-0.55,0-1.45-0.03-1.9-0.1v-3.5h1.35c1.54,0,2.28-0.8,2.28-2.54V8.1z
 		 M174.68,0.84h4.47v4.15h-4.47V0.84z"/>
-    <path d="M186.79,18.48c0.1,3.02,1.29,4.69,3.76,4.69c1.8,0,3.05-0.87,3.34-2.44h4.53c-0.61,3.82-3.47,5.98-7.87,5.98
+                        <path d="M186.79,18.48c0.1,3.02,1.29,4.69,3.76,4.69c1.8,0,3.05-0.87,3.34-2.44h4.53c-0.61,3.82-3.47,5.98-7.87,5.98
 		c-5.53,0-8.26-3.5-8.26-9.54c0-5.98,2.73-9.51,8.26-9.51c5.56,0,8.26,3.54,8.26,9.51v1.32H186.79z M186.86,15.4h7.42
 		c-0.19-2.67-1.35-4.21-3.73-4.21C188.14,11.19,186.98,12.73,186.86,15.4z"/>
-    <path d="M209.51,7.65c4.72,0,7.62,2.38,8,6.56h-4.47c-0.19-1.83-1.41-2.92-3.54-2.92c-2.86,0-3.79,2.15-3.79,5.88
+                        <path d="M209.51,7.65c4.72,0,7.62,2.38,8,6.56h-4.47c-0.19-1.83-1.41-2.92-3.54-2.92c-2.86,0-3.79,2.15-3.79,5.88
 		c0,3.76,0.93,5.94,3.79,5.94c2.12,0,3.34-1.09,3.54-2.96h4.47c-0.39,4.18-3.28,6.56-8,6.56c-5.53,0-8.26-3.5-8.26-9.54
 		C201.25,11.19,203.98,7.65,209.51,7.65z"/>
-    <path d="M226.12,20.41c0,2.06,0.64,2.54,2.86,2.54h1.83v3.47c-0.58,0.06-1.9,0.1-2.73,0.1c-4.59,0-6.46-1.35-6.46-5.33V11.7h-2.57
+                        <path d="M226.12,20.41c0,2.06,0.64,2.54,2.86,2.54h1.83v3.47c-0.58,0.06-1.9,0.1-2.73,0.1c-4.59,0-6.46-1.35-6.46-5.33V11.7h-2.57
 		V8.1h2.57V2.96h4.5V8.1h4.69v3.6h-4.69V20.41z"/>
-    <path d="M233.13,20.63h4.47v0.51c0,1.35,1.16,2.19,2.92,2.19c1.83,0,2.92-0.87,2.92-2.15c0-1.25-0.61-1.9-2.44-2.25l-1.83-0.32
+                        <path d="M233.13,20.63h4.47v0.51c0,1.35,1.16,2.19,2.92,2.19c1.83,0,2.92-0.87,2.92-2.15c0-1.25-0.61-1.9-2.44-2.25l-1.83-0.32
 		c-4.05-0.71-5.98-2.38-5.98-5.46c0-3.15,2.67-5.5,7.01-5.5c4.4,0,7,2.19,7,5.43v0.35h-4.47v-0.35c0-1.12-0.83-2.02-2.54-2.02
 		c-1.67,0-2.51,0.87-2.51,1.93c0,1.22,0.74,1.77,2.51,2.09l1.86,0.32c4.24,0.74,5.85,2.44,5.85,5.69c0,3.18-2.83,5.62-7.39,5.62
 		c-4.63,0-7.39-2.41-7.39-5.62V20.63z"/>
@@ -279,140 +290,53 @@
                 </svg>
             </div>
             <div class="skill_scroll">
-                <div class="scroll" data-scroll>
-                    <div class="scroll-content" data-scroll-content>
-
-                        <article class="slide slide--1 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__img js-transition-img">
-                                    <figure class="js-transition-img__inner">
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/project-one.png" draggable="false">
-                                    </figure>
+                    <div class="cont" id="skillScroll">
+                        <ul id="slider">
+                            <li>
+                                <div class="skill_center">
+                                     <span>HTML</span>
+                                    <span class="counter">1,234,567.00</span>
+                                    <span>$</span><span class="counter">1.99</span>
+                                    <span class="counter">12345</span>
                                 </div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--2 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__img js-transition-img">
-                                    <figure class="js-transition-img__inner">
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/project-two.png" draggable="false">
-                                    </figure>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--3 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__img">
-                                    <figure>
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/project-three.png" draggable="false">
-                                    </figure>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--1 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__img">
-                                    <figure>
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/project-one.png" draggable="false">
-                                    </figure>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--2 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__img">
-                                    <figure>
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/project-two.png" draggable="false">
-                                    </figure>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--3 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__img">
-                                    <figure>
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/project-three.png" draggable="false">
-                                    </figure>
-                                </div>
-                            </div>
-                        </article>
-
-                    </div>
-
-                    <div class="scroll-content scroll-content--last" data-scroll-content>
-
-                        <article class="slide slide--1 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__sub-title"><span>Project</span></div>
-                                <h1 class="slide__title"><div class="js-transition-title">Oak Refuge</div></h1>
-                                <div class="slide__img slide__img--proxy"></div>
-                                <div class="slide__project">Corpus Studio</div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--2 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__sub-title"><span>Project</span></div>
-                                <h1 class="slide__title"><div class="js-transition-title">Teton Residence</div></h1>
-                                <div class="slide__img slide__img--proxy"></div>
-                                <div class="slide__project">Ro Rocket Design</div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--3 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__sub-title"><span>Project</span></div>
-                                <h1 class="slide__title">Oak Refuge</h1>
-                                <div class="slide__img slide__img--proxy"></div>
-                                <div class="slide__project">Corpus Studio</div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--1 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__sub-title"><span>Project</span></div>
-                                <h1 class="slide__title">Teton Residence</h1>
-                                <div class="slide__img slide__img--proxy"></div>
-                                <div class="slide__project">Ro Rocket Design</div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--2 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__sub-title"><span>Project</span></div>
-                                <h1 class="slide__title">Oak Refuge</h1>
-                                <div class="slide__img slide__img--proxy"></div>
-                                <div class="slide__project">Corpus Studio</div>
-                            </div>
-                        </article>
-
-                        <article class="slide slide--3 js-slide">
-                            <div class="slide__inner">
-                                <div class="slide__sub-title"><span>Project</span></div>
-                                <h1 class="slide__title">Teton Residence</h1>
-                                <div class="slide__img slide__img--proxy"></div>
-                                <div class="slide__project">Ro Rocket Design</div>
-                            </div>
-                        </article>
-
-                    </div>
-
-                    <div class="scrollbar" data-scrollbar>
-                        <div class="scrollbar__handle js-scrollbar__handle"></div>
-                    </div>
-
-                </div>
-
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
-                <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
-                <script  src="./js/skill.js"></script>
+                                <span class="redSpan"></span>
+                            </li>
+                            <li>
+                                <div>lorem</div>
+                                <span class="redSpan"></span>
+                            </li>
+                            <li>
+                                <div>lorem</div>
+                                <span class="redSpan"></span>
+                            </li>
+                            <li>
+                                <div>lorem</div>
+                                <span class="redSpan"></span>
+                            </li>
+                            <li>
+                                <div>lorem</div>
+                                <span class="redSpan"></span>
+                            </li>
+                            <li>
+                                <div>lorem</div>
+                                <span class="redSpan"></span>
+                            </li>
+                            <li>
+                                <div>lorem</div>
+                                <span class="redSpan"></span>
+                            </li>
+                            <li>
+                                <div>lorem</div>
+                                <span class="redSpan"></span>
+                            </li>
+                        </ul>
+                        <div id="indicator">
+                            <div id="indi_bar"></div>
+                        </div>
+                    </div><!-- cont -->
             </div>
         </section>
+
     </main>
 </div>
 </body>

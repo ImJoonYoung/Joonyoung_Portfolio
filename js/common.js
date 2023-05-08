@@ -1,5 +1,6 @@
 /* 비쥬얼 메뉴 */
 $(document).ready(function() {
+
    $('.visual_menu > li').on('mouseenter', function() {
       $('.visual_menu > li').removeClass('close');
       $('.visual_menu > li').eq($(this).index()).addClass('close');
@@ -148,6 +149,11 @@ $(document).ready(function() {
       });
    }
    smoothScroll()
-
-
 });
+
+$(function(){
+   $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+   });
+})
