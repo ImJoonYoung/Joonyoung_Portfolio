@@ -29,8 +29,7 @@
     <script src="./js/vivus.min.js"></script>
 
     <!-- 카운터 js -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/countUp.min.js"></script>
 
     <!--common js-->
     <script src="./js/animation.js"></script>
@@ -295,9 +294,7 @@
                             <li>
                                 <div class="skill_center">
                                      <span>HTML</span>
-                                    <span class="counter">1,234,567.00</span>
-                                    <span>$</span><span class="counter">1.99</span>
-                                    <span class="counter">12345</span>
+                                    <div id="myTargetElement">0</div>
                                 </div>
                                 <span class="redSpan"></span>
                             </li>
@@ -338,6 +335,40 @@
         </section>
 
     </main>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let options = {
+                useEasing: true,
+                useGrouping: true,
+                separator: ',',
+                decimal: '.',
+                prefix: '',
+                suffix: ''
+            };
+
+            /**
+             [0] 카운트를 보여줄 ID
+             [1] 시작 카운트
+             [2] 종료 카운트
+             [3] 소수점
+             [4] 시작 ~ 종료 까지 실행 시간
+             [5] 옵션
+             */
+            let demo = new CountUp("myTargetElement", 0, 3000, 0, 2.5, options);
+
+            let sec1Top = $('#skill').offset().top
+
+
+            $(window).scroll(function() {
+                let scrollTop = $(this).scrollTop()
+                   if(scrollTop>sec1Top){
+                       demo.start();
+                 }else{
+                       demo.reset()
+                   }
+            })
+        });
+    </script>
 </div>
 </body>
 
